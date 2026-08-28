@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 · Xây dựng hệ thống báo cáo quản trị — Linh Lê</title>
+<meta name="description" content="Case study: Từ dữ liệu phân tán đến góc nhìn quản trị thống nhất. Data Lead, 2022–2023, toàn công ty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-name">LINH LÊ</span>
+      <span class="brand-tag">EXECUTIVE ASSISTANT <span>·</span> BUSINESS · STRATEGY · DATA</span>
+    </a>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="index.html#ve-toi">Về tôi</a>
+      <a href="index.html#du-an" class="active">Dự án tiêu biểu</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="cv.pdf" download>
+        Tải CV
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Mở menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <a class="back-link" href="index.html#du-an">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg>
+      Quay lại danh sách dự án
+    </a>
+
+    <!-- ============ HERO ============ -->
+    <section class="cs-hero">
+      <div class="cs-hero-copy">
+        <div class="cs-num"><b>01</b> · CASE STUDY</div>
+        <h1>Xây dựng hệ thống báo cáo quản trị</h1>
+        <p class="cs-subtitle">Từ dữ liệu phân tán đến góc nhìn quản trị thống nhất</p>
+
+        <div class="cs-meta">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <div><span class="m-label">Thời gian</span><span class="m-val">2022 – 2023</span></div>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6.4 7-6.4s7 2.8 7 6.4"/></svg>
+            <div><span class="m-label">Vai trò</span><span class="m-val">Data Lead</span></div>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg>
+            <div><span class="m-label">Phạm vi</span><span class="m-val">Toàn công ty</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-highlight">
+        <span class="eyebrow on-dark">Kết quả nổi bật</span>
+        <div class="hl-num" style="margin-top:14px;">83%</div>
+        <p class="hl-caption">Giảm thời gian tổng hợp báo cáo</p>
+        <div class="hl-detail"><b>60 phút</b> → <b>10 phút</b> mỗi kỳ báo cáo</div>
+      </div>
+    </section>
+
+    <!-- ============ 02 BỐI CẢNH & THÁCH THỨC ============ -->
+    <section class="cs-section">
+      <div class="cs-section-head">
+        <span class="cs-section-num">02</span>
+        <h2>Bối cảnh &amp; Thách thức</h2>
+      </div>
+      <p style="max-width:640px; color:var(--muted); font-size:15px; line-height:1.8; margin-bottom:32px;">Ba vấn đề chính khiến cần một hệ thống báo cáo quản trị mới.</p>
+
+      <div class="cs-two-col">
+        <div>
+          <span class="col-label">Bối cảnh</span>
+          <p>Khi quy mô kinh doanh tăng lên, dữ liệu đến từ nhiều nguồn, có nhiều cách tiếp cận khác nhau, gây khó khăn trong việc theo dõi hiệu suất và ra quyết định.</p>
+        </div>
+        <div>
+          <span class="col-label">Thách thức</span>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+              Dữ liệu phân tán ở nhiều nguồn, thiếu chuẩn hóa.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+              KPI chưa thống nhất, khó theo dõi và so sánh.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+              Mất nhiều thời gian tổng hợp báo cáo thủ công.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+              Thông tin chưa cung cấp insight phục vụ ra quyết định.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 Ý TƯỞNG CỐT LÕI & KHUNG QUẢN TRỊ ============ -->
+    <section class="cs-section">
+      <div class="cs-section-head">
+        <span class="cs-section-num">03</span>
+        <h2>Cách tiếp cận &amp; Khung quản trị</h2>
+      </div>
+
+      <div class="idea-block">
+        <h3>Không bắt đầu từ báo cáo. Bắt đầu từ mục tiêu.</h3>
+        <p>Một hệ thống báo cáo quản trị chỉ có giá trị khi bắt đầu từ mục tiêu đã được thống nhất, trả lời đúng những câu hỏi người ra quyết định cần biết và tạo ra một vòng lặp review liên tục.</p>
+      </div>
+
+      <span class="col-label">Khung quản trị — 5 bước tạo nên hệ thống báo cáo quản trị, không chỉ là quy trình làm báo cáo, mà là một vòng lặp quản trị liên tục.</span>
+
+      <div class="flow" style="margin-top:18px;">
+        <div class="flow-node">Mục tiêu kinh doanh</div>
+        <span class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <div class="flow-node">Câu hỏi quản trị</div>
+        <span class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <div class="flow-node">Định nghĩa dữ liệu</div>
+        <span class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <div class="flow-node">Thu thập dữ liệu</div>
+        <span class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <div class="flow-node">Báo cáo</div>
+        <span class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <div class="flow-node">Review định kỳ</div>
+      </div>
+
+      <div class="step-list">
+        <div class="step-row">
+          <span class="s-num">01</span>
+          <div>
+            <h4>Xác định mục tiêu đầu năm</h4>
+            <p>Tổng hợp tình hình năm trước, kết hợp định hướng của Ban lãnh đạo và kế hoạch các bộ phận để chốt mục tiêu năm.</p>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="s-num">02</span>
+          <div>
+            <h4>Thu thập câu hỏi quản trị &amp; alignment định nghĩa dữ liệu</h4>
+            <p>Xác định câu hỏi cần trả lời và thống nhất KPI, đơn vị đo, quy tắc tính, trách nhiệm cung cấp.</p>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="s-num">03</span>
+          <div>
+            <h4>Thu thập dữ liệu</h4>
+            <p>Thu thập doanh thu mục tiêu và doanh thu thực tế theo đúng định nghĩa đã thống nhất.</p>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="s-num">04</span>
+          <div>
+            <h4>Xây dựng báo cáo</h4>
+            <p>Thiết kế báo cáo để trả lời đúng, đủ câu hỏi quản trị và đưa vào sử dụng thường xuyên.</p>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="s-num">05</span>
+          <div>
+            <h4>Review tiến độ định kỳ</h4>
+            <p>Đối chiếu thực tế với mục tiêu, phát hiện điểm lệch và quay lại điều chỉnh mục tiêu hoặc định nghĩa khi bối cảnh thay đổi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 KẾT QUẢ & TÁC ĐỘNG ============ -->
+    <section class="cs-section">
+      <div class="cs-section-head">
+        <span class="cs-section-num">04</span>
+        <h2>Kết quả tạo ra giá trị thực tế cho tổ chức</h2>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="i-head">83%</div>
+          <p>Giảm thời gian tổng hợp báo cáo, từ 60 phút còn 10 phút.</p>
+        </div>
+        <div class="impact-card">
+          <div class="i-head">Chuẩn hóa</div>
+          <p>KPI &amp; định nghĩa — tạo ngôn ngữ dữ liệu chung giữa các bộ phận.</p>
+        </div>
+        <div class="impact-card">
+          <div class="i-head">Tự động</div>
+          <p>Báo cáo tự động, kịp thời &amp; sẵn sàng — thông tin luôn được cập nhật khi cần.</p>
+        </div>
+        <div class="impact-card">
+          <div class="i-head">Toàn diện</div>
+          <p>Góc nhìn tổng quan theo Organization Chart — Ban lãnh đạo nắm tình hình toàn diện hơn.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 BÀI HỌC RÚT RA ============ -->
+    <section class="cs-section">
+      <div class="cs-section-head">
+        <span class="cs-section-num">05</span>
+        <h2>Điều tôi rút ra</h2>
+      </div>
+      <div class="reflection">
+        <blockquote>Xây dựng một hệ thống báo cáo quản trị không bắt đầu từ việc chọn công cụ hay thiết kế dashboard. Nó bắt đầu từ việc hiểu mục tiêu, đặt đúng câu hỏi và tạo ra một ngôn ngữ dữ liệu chung. Khi những điều đó được thống nhất, báo cáo trở thành một phần của vòng lặp quản trị — từ mục tiêu, theo dõi, review đến hành động.</blockquote>
+        <div class="reflection-visual" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/><path d="M12 7v5l3.5 2"/></svg>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ CASE NAV ============ -->
+  <nav class="cs-nav" aria-label="Điều hướng case study">
+    <div class="wrap">
+      <span class="cs-nav-link disabled">
+        <span class="n-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg></span>
+        <span>
+          <span class="n-label">Dự án trước</span>
+          <span class="n-title">Chưa có</span>
+        </span>
+      </span>
+      <div class="cs-dots" aria-hidden="true">
+        <span class="on"></span><span></span><span></span><span></span>
+      </div>
+      <a class="cs-nav-link next" href="case-study-02.html">
+        <span class="n-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span>
+        <span>
+          <span class="n-label">Dự án tiếp theo</span>
+          <span class="n-title">02 — Xây dựng hệ thống báo cáo vận hành</span>
+        </span>
+      </a>
+    </div>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="footer-copy">© 2026 Linh Lê. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 0 1 4 0V17M11 12.5V17"/></svg>
+        LinkedIn
+      </a>
+      <a href="mailto:hello@linhle.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        Email
+      </a>
+      <a href="cv.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download CV
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

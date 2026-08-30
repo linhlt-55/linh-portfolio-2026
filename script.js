@@ -29,3 +29,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Expand toggle (case study "Xem chi tiết thực thi" link)
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle = document.querySelector('.expand-toggle');
+  if (!toggle) return;
+  var targetId = toggle.getAttribute('data-target');
+  var target = document.getElementById(targetId);
+  if (!target) return;
+
+  var labelEl = toggle.querySelector('.toggle-label');
+  var originalLabel = labelEl.textContent;
+
+  toggle.addEventListener('click', function () {
+    var isOpen = target.classList.toggle('open');
+    toggle.classList.toggle('open', isOpen);
+    labelEl.textContent = isOpen ? 'Thu gọn' : originalLabel;
+  });
+});

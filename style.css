@@ -143,6 +143,18 @@ button{ font-family: inherit; }
 .btn-sm{ padding: 9px 16px; font-size: 13px; }
 
 .nav-cta{ display: flex; align-items: center; gap: 14px; }
+.lang-switch{
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  transition: color .15s ease, border-color .15s ease;
+}
+.lang-switch:hover{ color: var(--ink); border-color: var(--ink); }
 .nav-toggle{
   display: none;
   width: 40px; height: 40px;

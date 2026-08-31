@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', function () {
     var isOpen = target.classList.toggle('open');
     toggle.classList.toggle('open', isOpen);
-    labelEl.textContent = isOpen ? 'Thu gọn' : originalLabel;
+    var collapsedLabel = toggle.getAttribute('data-collapsed-label') || 'Thu gọn';
+    labelEl.textContent = isOpen ? collapsedLabel : originalLabel;
   });
 });
